@@ -18,7 +18,7 @@ Having loaded dependencies and installed on your project, we will add ServicePro
 
 You need to update your application configuration in order to register the package so it can be loaded by Framework.
 
-To move the MoIP settings file to the Settings folder of your application, simply perform the following command:
+To move the Safe2Pay settings file to the Settings folder of your application, simply perform the following command:
 
 ```shell
 php artisan vendor:publish
@@ -41,6 +41,3 @@ His `.env` file, add the following values
 S2P_KEY=authorization_key
 S2P_SANDBOX=homologated_true_or_false
 ```
-## License
-
-[The MIT License](https://github.com/artesaos/moip/blob/master/LICENSE)
