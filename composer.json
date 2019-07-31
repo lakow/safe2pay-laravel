@@ -1,0 +1,32 @@
+{
+    "name": "lakow/safe2pay-laravel",
+    "type": "library",
+    "keywords": ["safe2pay", "gateway", "payment", "laravel", "checkout", "intermediary", "bankslip"],
+    "description": "Component to integrate payment methods through safe2pay platform",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Sena",
+            "email": "carlos.al.sena@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "lakow/safe2pay": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lakow\\Safe2Pay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lakow\\Safe2Pay\\Providers\\PaymentServiceProvider"
+            ],
+            "aliases": {
+                "Safe2Pay": "Lakow\\Safe2Pay\\Facades\\Safe2Pay"
+            }
+        }
+    }
+}
